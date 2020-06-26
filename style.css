@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ccc;
+}
+
+.window {
+    height: 60vh;
+    width: 50vw;
+    background-color: rgb(10, 0, 66);
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.gameStart h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.gameStart span {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gameStart button {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    color: white;
+    background-color: rgb(72, 151, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 20px;
+
+}
+
+button:focus,
+button:visited {
+    border: none;
+    outline: none;
+
+}
+
+.gameStart button:hover {
+    color: rgb(72, 151, 255);
+    background-color: white;
+}
+
+.gameMain {
+    padding: 5px;
+}
+
+.actuallPoints {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.myRecord {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.gameContent {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left {
+    background-color: white;
+    flex-basis: 50%;
+    height: 95%;
+    margin-left: -5px;
+    position: relative;
+    align-self: flex-end;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.right {
+    background-color: white;
+    flex-basis: 50%;
+    height: 95%;
+    margin-right: -5px;
+    position: relative;
+    align-self: flex-end;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.gameContent span,
+.gameContent button {
+    z-index: 3;
+}
+
+.date {
+    text-align: center;
+}
+
+.question {
+    min-width: 300px;
+}
+
+.gameContent img {
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    left: -30%;
+    width: 200%;
+    height: 102%;
+}
+
+.name {
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    color: black;
+}
+
+.date {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.vs {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(10, 0, 66);
+    border-radius: 10px;
+    padding: 3px 10px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.question {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+
+}
+
+.right button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    color: white;
+    background-color: rgb(32, 109, 209);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 17px;
+    min-width: 200px;
+}
+
+.right .answerRight {
+    bottom: 10%;
+}
+
+.right button:hover {
+    color: rgb(72, 151, 255);
+    background-color: white;
+}
+
+.gameOver h1 {
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+
+}
+
+.gameOver span {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+}
+
+.gameOver button {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    color: white;
+    background-color: rgb(72, 151, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.gameOver button:hover {
+    color: rgb(72, 151, 255);
+    background-color: white;
+}
+
+.correctAnswer {
+    background-color: green;
+
+}
+
+.badAnswer {
+    background-color: red;
+}
+
+.waitForAnswer {
+    background-color: white;
+}
+
+.whiteFont {
+    color: white;
+}

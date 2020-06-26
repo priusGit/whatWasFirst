@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73d28675cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="window gameStart">
+            <h1>Kto był pierwszy?</h1><span>Myślisz, że wiesz kto był pierwszy? <br> Udowodnij to!</span> <button
+                class="startGame">Zaczynamy!</button>
+        </div>
+        <div class="window gameMain off">
+            <span class="actuallPoints">Punkty: 0</span>
+            <span class="myRecord">Mój rekord: 10</span>
+            <span class="vs">VS</span>
+            <div class="gameContent">
+                <div class="left">
+                    <span class="name" id="item">Lewy</span>
+                    <span class="date" id="date">Data wynalezienia: </span>
+                    <div class="pasek"></div>
+                    <img src="" alt="imageLeft">
+                </div>
+                <div class="right">
+                    <span class="name" id="item">Prawy</span>
+                    <span class="question">Co powstało pierwsze?<br><span id="questionItemLeft">Lewy</span> czy <span
+                            id="questionItemRight">Prawy</span>?</span>
+                    <button class="answerLeft" id="answerLeft">Lewy</button>
+                    <button class="answerRight" id="answerRight">Prawy</button>
+                    <img src="" alt="imageRight">
+                </div>
+            </div>
+        </div>
+        <div class="window gameOver off">
+            <h1>Koniec Gry</h1>
+            <span>Twój wynik to: 2137</span>
+            <button>zagraj jeszcze raz</button>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
