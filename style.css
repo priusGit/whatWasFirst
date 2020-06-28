@@ -281,3 +281,164 @@ button:visited {
 .whiteFont {
     color: white;
 }
+
+
+@media(max-width:340px) and (orientation:portrait) {
+    #item {
+        display: none;
+    }
+}
+
+@media (orientation:portrait) and (max-width:900px) {
+
+    .gameMain,
+    .gameStart,
+    .gameOver {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .gameContent {
+        display: block;
+        height: 100%;
+        width: 100vw;
+        padding: 20px;
+    }
+
+    div.left,
+    div.right {
+        max-width: 100%;
+        width: 95%;
+        height: 48%;
+        margin: 5% auto 1% auto;
+    }
+
+    .gameContent span.question {
+        z-index: 10;
+        top: 25%;
+        font-size: 1.7rem;
+    }
+
+    .vs {
+        display: none;
+    }
+
+    button.answerRight {
+        transform: translate(-50%, 0);
+    }
+
+    .date {
+        transform: translate(-50%, 30%);
+    }
+
+    .gameStart h1 {
+        top: 30%;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+@media (orientation:landscape) and (max-width:1200px) {
+
+    .gameMain,
+    .gameStart,
+    .gameOver {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .question {
+        bottom: 50%
+    }
+
+    .left .date {
+        bottom: 25%;
+    }
+
+    .name {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right .answerRight {
+        bottom: 3%;
+    }
+
+    .gameOver h1 {
+        top: 30%;
+    }
+
+    .gameStart h1 {
+        top: 25%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gameOver button {
+        bottom: 20%;
+    }
+
+    .gameStart button {
+        bottom: 20%;
+    }
+}
+
+@media (orientation:landscape) and (min-width:1000px) and (max-width:1200px) {
+    .question {
+        bottom: 30%;
+        font-size: 30px;
+    }
+
+    .left .date {
+        bottom: 25%;
+        font-size: 30px;
+    }
+
+    .name {
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .gameOver h1 {
+        font-size: 80px;
+    }
+
+    .gameOver button {
+        bottom: 15%;
+        width: 50%;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .gameOver span {
+        font-size: 25px;
+    }
+
+    .gameContent button {
+        bottom: 15%;
+        width: 50%;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .gameStart button {
+        bottom: 20%;
+        width: 50%;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .gameStart span {
+        font-size: 25px;
+    }
+}
+
+@media (orientation:portrait) and (min-width:901px) {
+
+    .gameStart,
+    .gameMain,
+    .gameOver {
+        width: 90vw;
+    }
+}
